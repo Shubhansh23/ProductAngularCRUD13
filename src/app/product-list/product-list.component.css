@@ -1,0 +1,12 @@
+/* src/app/product-list/product-list.component.css */
+
+.edit-button {
+    margin-left: 10px; /* Adjust the value based on the desired space */
+  }
+  
+  .details-link {
+    margin-left: 10px; /* Adjust the value based on the desired space */
+  }
+  .delete-button {
+    margin-left: 10px; /* Adjust the value based on the desired space */
+  }

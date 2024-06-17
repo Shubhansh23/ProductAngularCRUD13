@@ -1,0 +1,15 @@
+<!-- src/app/update-product/update-product.component.html -->
+
+<h2>Edit Product</h2>
+
+<form (submit)="updateProduct()">
+  <label for="name">Product Name:</label>
+  <input type="text" name="name" id="name" [(ngModel)]="product.name" required>
+
+  <label for="price">Product Price:</label>
+  <input type="number" name="price" id="price" [(ngModel)]="product.price" required>
+
+  <button type="submit">Update Product</button>
+</form>
+
+<button routerLink="/products">Cancel</button>

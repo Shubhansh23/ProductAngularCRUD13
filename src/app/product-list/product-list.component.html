@@ -1,0 +1,17 @@
+<!-- src/app/product-list/product-list.component.html -->
+
+<h2>Product List</h2>
+
+<ul>
+  <li *ngFor="let product of products">
+    {{ product.name }} - {{ product.price }}
+    <!--<a routerLink="/products/{{ product.id }}" class="details-link">Details</a>-->
+
+    <button (click)="navigateToDetails(product.id)" class="details-link">Details</button>
+    <button (click)="deleteProduct(product.id)" class="delete-button">Delete</button>
+
+    <!--<a routerLink="/products/{{ product.id }}/update" class="edit-link">Edit</a>-->
+    <button (click)="navigateToEdit(product.id)" class="edit-button">Edit</button>
+
+  </li>
+</ul>

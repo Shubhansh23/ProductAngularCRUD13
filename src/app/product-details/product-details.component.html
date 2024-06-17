@@ -1,0 +1,9 @@
+<!-- src/app/product-details/product-details.component.html -->
+
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <p>Name: {{ product.name }}</p>
+  <p>Price: ${{ product.price }}</p>
+  <a routerLink="/products/{{ product.id }}/update">Edit</a>
+</div>
